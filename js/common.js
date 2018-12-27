@@ -11,6 +11,7 @@ function menuBtn(dom){
 function addBg(dom){
 	dom.find("li").on("click",function(){
 		$(this).addClass("active").siblings().removeClass("active")
+		dom.hide()
 	})
 }
 })

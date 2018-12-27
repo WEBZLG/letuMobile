@@ -335,3 +335,95 @@
     margin: 0 0.13rem;
 }
 
+/*底部*/
+footer{
+	background-color: #1A1A1A;
+}
+.contact{
+	height: 2.59rem;
+	font-size: 12px;
+	color: #fff;
+	position: relative;
+	line-height: 30px;
+	padding: 0 0.27rem;
+	margin-top: 0.54rem;
+	background: url(../images/contactus_bg.png) no-repeat;
+	background-size: 100%;
+}
+.join-us{
+	position: absolute;
+    top: 1.08rem;
+    right: 0.75rem;
+    width: 2.16rem;
+    box-shadow: 0 0 8px 2px #555;
+}
+.contact em{
+    font-size: 24px;
+    font-weight: bold;
+}
+.service{
+	color: #595959;
+	font-size: 14px;
+	padding: 0 0.27rem;
+}
+.service h3{
+    font-size: 18px;
+    color: #fff;
+	padding: 10px 0;
+}
+.service h3 em{
+	color: #FFCF00;
+}
+.tab-box{
+	display: flex;
+}
+.nav-item{
+	color: #fff;
+	font-size: 14px;
+	margin-right: 12px;
+	padding: 0.13rem 0.27rem;
+	background-color: #595959;
+}
+.nav-item.active{
+	color: #000;
+	background-color: #FFD001;
+}
+.tab-item{
+	display: none;
+    padding: 0.27rem 0 0.4rem;
+	border-bottom: 1px solid #595959;
+}
+.tab-item.block{
+	display: block;
+}
+.tab-item li{
+    float: left;
+    font-size: 12px;
+    line-height: 20px;
+}
+.tab-item li span{
+	padding: 0 0.05rem;
+}
+.tab-item li:last-child span{
+	display: none;
+}
+.qr-code{
+	display: flex;
+}
+.code-item{
+    width: 30%;
+    text-align: center;
+    margin: 30px auto;
+}
+.code-item h4{
+	font-size: 14px;
+	color: #fff;
+	padding: 0.13rem 0;
+}
+.copyright{
+	text-align: center;
+	font-size: 14px;
+	color: #595959;
+	line-height: 0.64rem;
+	padding-bottom: 1.08rem;
+}
