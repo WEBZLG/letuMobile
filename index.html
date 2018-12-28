@@ -12,6 +12,7 @@
 		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
 		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="shortcut icon" href="bitbug_favicon.ico" type="image/x-icon" />
 		<script src="js/flex.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
@@ -33,11 +34,11 @@
 					<div class="menu-list">
 						<ul>
 							<li><a href="index.html"><strong>首页</strong>/HOME PAGE</a></li>
-							<li><a href="#"><strong>乐途</strong>/LETU</a></li>
-							<li><a href="#"><strong>服务</strong>/SERVICES</a></li>
-							<li><a href="#"><strong>案例</strong>/CASE</a></li>
-							<li><a href="#"><strong>咨询</strong>/NEWS</a></li>
-							<li><a href="#"><strong>招聘</strong>/RECRUITMENT</a></li>
+							<li><a href="pages/letu.html"><strong>乐途</strong>/LETU</a></li>
+							<li><a href="pages/service.html"><strong>服务</strong>/SERVICES</a></li>
+							<li><a href="pages/case.html"><strong>案例</strong>/CASE</a></li>
+							<li><a href="pages/news.html"><strong>资讯</strong>/NEWS</a></li>
+							<li><a href="pages/recruit.html"><strong>招聘</strong>/RECRUITMENT</a></li>
 						</ul>
 					</div>
 				</div>
@@ -60,7 +61,7 @@
 					</div>
 					<h3>关于乐途传媒</h3>
 				</div>
-				<div class="about-right fr  wow animated slideInRight">
+				<div class="about-right fr  wow animated slideInDown">
 					<div class="right-img">
 						<img src="images/pic2.png"/>
 					</div>
@@ -308,26 +309,5 @@
 		<script src="js/wow.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery.running.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
-		<script type="text/javascript">
-
-			new WOW().init();
-
-			  var mySwiper = new Swiper ('.swiper-container', {
-			    loop: true, // 循环模式选项    
-			    autoplay:3000,
-			    navigation: {
-			      nextEl: '.swiper-button-next',
-			      prevEl: '.swiper-button-prev',
-			    },
-			  })
-			  $("animateNum").running()
-			  
-			  //	服务合作导航
-				$(".tab-box").find(".nav-item").on("click",function(){
-					$(this).addClass("active").siblings().removeClass("active")
-					var index = $(this).index()
-					$(".tab-text").find(".tab-item").eq(index).addClass("block").siblings().removeClass("block")
-				})
-		</script>
 	</body>
 </html>
