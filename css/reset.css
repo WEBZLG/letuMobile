@@ -124,10 +124,10 @@ input{
     display: none;
 }
 .mg15{
-	margin: 15px;
+	margin: 0.4rem;
 }
 .pd15{
-	padding: 0 15px;
+	padding: 0 0.4rem;
 }
 .tcenter{
 	text-align: center;
