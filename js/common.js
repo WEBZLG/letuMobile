@@ -31,7 +31,6 @@ $(function() {
 	//	首页导航按钮
 	function menuBtn(dom) {
 		dom.off("click").on("click", function() {
-			console.log(11)
 			$(this).next().toggle(200)
 		})
 	}

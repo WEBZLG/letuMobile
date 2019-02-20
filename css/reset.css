@@ -126,9 +126,19 @@ input{
 .mg15{
 	margin: 0.4rem;
 }
+.mg15R{
+	margin: 0.4rem 0;
+}
 .pd15{
 	padding: 0 0.4rem;
 }
+.pd15R{
+	padding: 0.4rem;
+}
 .tcenter{
-	text-align: center;
+	text-align: center !important;
+}
+.border-bottom{
+    border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 0.55rem;
 }

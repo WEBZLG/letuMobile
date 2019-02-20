@@ -22,8 +22,43 @@
 				$("header").load("../header.html")
 			</script>
 		</header>
-		<div class="">
-			
+		<div class="container">
+			<div class="banner">
+				<img src="../images/case_banner.png"/>
+			</div>
+			<div class="case-nav clearfix">
+				<div class="fl pd15">
+					当前分类：<em class="show-text">解决方案</em>
+				</div>
+				<div class="fr pd15">
+					<span class="choose-type">选择分类</span>
+					<ul class="case-type">
+						<li>解决方案</li>
+						<li>案例展示</li>
+					</ul>
+				</div>
+			</div>
+			<div class="case-show-box">
+				<div class="case-list-box pd15 mg15R clearfix wow animated slideInUp">
+					<a href="caseEducation.html"><img src="../images/case1.png"/></a>
+					<a href="caseRetail.html"><img src="../images/case2.png"/></a>
+					<a href="caseGovernment.html"><img src="../images/case3.png"/></a>
+					<a href="caseMedical.html"><img src="../images/case4.png"/></a>
+					<a href="caseHotel.html"><img src="../images/case5.png"/></a>
+					<a href="caseManufacturing.html"><img src="../images/case6.png"/></a>
+					<a href="caseTravel.html"><img src="../images/case7.png"/></a>
+					<a href="caseRealty.html"><img src="../images/case8.png"/></a>
+					<a href="caseInternet.html"><img src="../images/case9.png"/></a>
+				</div>
+				<div class="case-list-box pd15 mg15R clearfix dn wow animated slideInUp">
+					<a href="caseShowZh.html"><img src="../images/case_logo1.png"/></a>
+					<a href="caseShowRh.html"><img src="../images/case_logo2.png"/></a>
+					<a href="caseShowYj.html"><img src="../images/case_logo3.png"/></a>
+					<a href="caseShowZy.html"><img src="../images/case_logo4.png"/></a>
+					<a href="caseShowDen.html"><img src="../images/case_logo5.png"/></a>
+					<a href="caseShowJdj.html"><img src="../images/case_logo6.png"/></a>
+				</div>
+			</div>
 		</div>
 		<footer>
 			<script type="text/javascript">
@@ -35,6 +70,19 @@
 		<script src="../js/swiper-3.4.2.jquery.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../js/wow.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../js/jquery.running.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$(".choose-type").on("click",function(){
+					$(this).next(".case-type").slideToggle(300);
+				})
+				$(".case-type").find("li").on("click",function(){
+					$(this).parents(".case-type").slideToggle(300);
+					var idx = $(this).index();
+					var nowText = $(this).text()
+					$(".show-text").text(nowText)
+					$(".case-show-box").find(".case-list-box").eq(idx).slideDown(300).siblings().slideUp(300)
+				})
+			})
+		</script>
 	</body>
 </html>

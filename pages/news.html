@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>乐途</title>
+		<title>资讯</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<meta content="yes"name="apple-mobile-web-app-capable"/>
 		<meta content="black"name="apple-mobile-web-app-status-bar-style"/>
@@ -22,8 +22,84 @@
 				$("header").load("../header.html")
 			</script>
 		</header>
-		<div class="">
-			
+		<div class="container">
+			<div class="banner">
+				<img src="../images/news_banner.png"/>
+			</div>
+			<div class="news-nav">
+				<ul class="clearfix">
+					<li class="active">行业新闻<span class="under-line"></span></li>
+					<li>乐途动态<span class="under-line"></span></li>
+				</ul>
+			</div>
+			<div class="pd15 mg15R">
+				<div class="news-item-box">
+					<div class="news_bg">
+						<img src="../images/news_bg.png"/>
+						<a href="newsDetials.html" class="item-top">
+							<div class="clearfix top-text">
+								<div class="fl item-img">
+									<img src="../images/toutiao.jpg"/>
+								</div>
+								<div class="fl item-text">
+									<h3>1小程序的2019：百度小程序怎么样？</h3>
+									<p>2019-02-15</p>
+								</div>
+							</div>
+							<div class="bottom-text">
+								<p>说到小程序，我们可能先想到的是微信小程序、支付宝小程序。今天，来聊聊百度小程序~</p>
+							</div>
+						</a>
+					</div>
+					<a href="newsDetials.html" class="news_bg news-item-list mg15R">
+						<div class="clearfix top-text">
+							<div class="fl item-img">
+								<img src="../images/brand.jpg"/>
+							</div>
+							<div class="fl item-text">
+								<h3>小程序的2019：百度小程序怎么样？</h3>
+								<p>2019-02-15</p>
+							</div>
+						</div>
+						<div class="bottom-text">
+							<p>说到小程序，我们可能先想到的是微信小程序、支付宝小程序。今天，来聊聊百度小程序~</p>
+						</div>
+					</a>
+				</div>
+				<div class="news-item-box dn">
+					<div class="news_bg">
+						<img src="../images/news_bg.png"/>
+						<a href="newsDetials.html" class="item-top">
+							<div class="clearfix top-text">
+								<div class="fl item-img">
+									<img src="../images/toutiao.jpg"/>
+								</div>
+								<div class="fl item-text">
+									<h3>2小程序的2019：百度小程序怎么样？</h3>
+									<p>2019-02-15</p>
+								</div>
+							</div>
+							<div class="bottom-text">
+								<p>说到小程序，我们可能先想到的是微信小程序、支付宝小程序。今天，来聊聊百度小程序~</p>
+							</div>
+						</a>
+					</div>
+					<a href="newsDetials.html" class="news_bg news-item-list mg15R">
+						<div class="clearfix top-text">
+							<div class="fl item-img">
+								<img src="../images/brand.jpg"/>
+							</div>
+							<div class="fl item-text">
+								<h3>小程序的2019：百度小程序怎么样？</h3>
+								<p>2019-02-15</p>
+							</div>
+						</div>
+						<div class="bottom-text">
+							<p>说到小程序，我们可能先想到的是微信小程序、支付宝小程序。今天，来聊聊百度小程序~</p>
+						</div>
+					</a>
+				</div>
+			</div>
 		</div>
 		<footer>
 			<script type="text/javascript">
@@ -35,6 +111,14 @@
 		<script src="../js/swiper-3.4.2.jquery.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../js/wow.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../js/jquery.running.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$(".news-nav").find("li").on("click",function(){
+					var idx = $(this).index();
+					$(this).addClass("active").siblings().removeClass("active");
+					$(this).parents(".container").find(".news-item-box").eq(idx).slideDown(500).siblings().slideUp(500);
+				})
+			})
+		</script>
 	</body>
 </html>
