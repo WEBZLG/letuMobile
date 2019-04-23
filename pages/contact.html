@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>联系我们</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta content="yes"name="apple-mobile-web-app-capable"/>
+		<meta content="black"name="apple-mobile-web-app-status-bar-style"/>
+		<meta content="telephone=no"name="format-detection"/>
+		<meta content="email=no"name="format-detection"/>
+		<link rel="shortcut icon" href="../../bitbug_favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="../../css/swiper-3.4.2.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/animate.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/common.css"/>
+		<script src="../../js/flex.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=TzOGshSWLLXPZEnMm6uHLahdjGxXeUDM"></script>
+	</head>
+	<body>
+		<header>
+			<script type="text/javascript">
+				$("header").load("../../header.html")
+			</script>
+		</header>
+		<div class="container">
+			<div class="banner">
+				<img src="../images/service_banner.png"/>
+			</div>
+			<div class="build-title  wow animated slideInDown">
+				<h3>联系我们</h3>
+				<div class="ling-img"><img src="../images/pic1.png"/></div>
+				<h5>CONTACT <span>US</span></h5>
+			</div>
+			<div class="contact-message pd15">
+				<div class="message-item">
+					<div class="icon-contact">
+						<img src="../images/c-address.png"/>
+					</div>
+					<div class="contact-text">
+						<p>黑龙江省哈尔滨市群力丽江路3936号银泰城F座13层</p>
+					</div>
+				</div>
+				<div class="message-item">
+					<div class="icon-contact">
+						<img src="../images/c-phone.png"/>
+					</div>
+					<div class="contact-text">
+						<p>0451-84520033  16603634001(刘先生)</p>
+					</div>
+				</div>
+				<div class="message-item">
+					<div class="icon-contact">
+						<img src="../images/c-email.png"/>
+					</div>
+					<div class="contact-text">
+						<p>letuchuanmei@126.com(业务/人事)</p>
+					</div>
+				</div>
+				<div class="message-item">
+					<div class="icon-contact">
+						<img src="../images/c-weibo.png"/>
+					</div>
+					<div class="contact-text">
+						<p>@黑龙江乐途传媒</p>
+					</div>
+				</div>
+			</div>
+			<div class="contact-ewm">
+				<img src="../images/code_wechar.png"/>
+			</div>
+			<div class="form-text">
+				<input type="text" name="name" id="name" value="" />
+				<input type="text" name="phone" id="phone" value="" />
+				<input type="submit" name="submit-text" id="submit-text" value="提交" />
+			</div>
+			<div id="allmap"></div>
+		</div>
+		<footer>
+			<script type="text/javascript">
+				$("footer").load("../../footer.html")
+			</script>
+		</footer>
+		<script src="../../js/swiper-3.4.2.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/wow.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/jquery.running.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			// 百度地图API功能
+			var map = new BMap.Map("allmap");    // 创建Map实例
+			map.centerAndZoom(new BMap.Point(14087340.655000001, 5708766.6), 19);  // 初始化地图,设置中心点坐标和地图级别
+			//添加地图类型控件
+			map.addControl(new BMap.MapTypeControl({
+				mapTypes:[
+		            BMAP_NORMAL_MAP,
+		            BMAP_HYBRID_MAP
+		        ]}));	  
+			map.setCurrentCity("哈尔滨");          // 设置地图显示的城市 此项是必须设置的
+			map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+		</script>
+	</body>
+</html>
